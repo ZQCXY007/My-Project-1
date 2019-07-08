@@ -1,3 +1,4 @@
+/* 导航栏 */
 ._height{
     height:100px;
     position: relative;
@@ -9,6 +10,7 @@
     position: absolute;
     top:0px;left: 0px;
 }
+/* 图片样式 */
 .img_position img{
     cursor: pointer;
     transition: all 0.5s;
@@ -28,6 +30,8 @@ ul,li{
     float: left;
     padding:1.2rem;
 }
+
+/* 字体样式 */
 ._height a:link { 
     color: #000000; 
     text-decoration: none; 
@@ -40,16 +44,84 @@ ul,li{
     color: rgb(223, 223, 12); 
     text-decoration: underline; 
  }
-.car_height{
-    position: relative;
-    height: 601px;
+/* 以上是导航条的样式 */
+
+/* 轮播图 */
+ul,li{
+    list-style: none;
+    margin: 0;padding: 0;
 }
-.car_height ul{
-    margin: 0px;padding: 0px;
+/*css public start*/
+.floatfix{
+    *zoom: 1;
 }
-.car_img{
+.floatfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*css public end*/
+
+/*slider start*/
+.slider-contaner{
     width: 100%;
+    position: relative;
 }
-._shang{
-    z-index: 1000px;
+.slider-item + .slider-item{
+    opacity: 0;
 }
+.slider-item{
+    width: 100%;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    background-size: 100%
+}
+.focus-container{
+    position: absolute;
+    z-index: 10px;
+    margin: 0 auto;
+    left: 0;right: 0;
+}
+.focus-container li{
+    width: 30px;height: 10px;
+    border-radius:5px;
+    float: left;
+    margin-right: 3px;
+    background: #fff; 
+}
+.focus-item{
+    width: 100%;height: 100%;
+    border-radius: inherit;
+    animation-timing-function: linear;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+}
+.focus-item{ opacity:0; }
+.focus-container ul{ margin-right: 43%; }
+
+/* 设置轮播焦点的位置 */
+.focus-container{ bottom: 10%; }
+
+/* 设置图片焦点的颜色 */
+.focus-item{ background: lawngreen }
+
+/* 设置动画 */
+.slider-item,.focus-item{ animation-duration: 5s; }
+.slider-item1,.focus-item1{ animation-delay: -2s; }
+.slider-item2,.focus-item2{ animation-delay: 1s; }
+@keyframes fade{
+    0%{ opacity: 0;z-index: 1; }
+    100%{ opacity: 1;z-index: 2; }
+}
+/* 设置背景 */
+.slider-item1{
+    background-image: url(../img/carousel1.img/wKgBS1uGBnOATaOpAAT-kIRW9Ek108.jpg);
+}
+.slider-item2{
+    background-image: url(../img/carousel1.img/wKgBS1uHgHiAevECAAhJfAx4DHY838.jpg);
+}
+/* 图片的高度 */
+.slider , .slider-item{ padding-bottom: 29.2%; }
+/* .slider , .slider-item2{ padding-bottom: 29%; } */
