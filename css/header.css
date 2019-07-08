@@ -1,26 +1,55 @@
-.s_height{
-    width:100%;
+._height{
+    height:100px;
+    position: relative;
 }
-.l_float{
-    float: left;
+._position1{
+    position: relative;
 }
-.r_float{
-    float: right;
+.img_position{
+    position: absolute;
+    top:0px;left: 0px;
 }
-.m_l_p{
-    margin-left: 5rem;
+.img_position img{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.img_position img:hover{
+    transform: scale(1.1)
+}
+._position2{
+    width: 800px;
+    position: absolute;
+    top:0px;left: 300px;
 }
 ul,li{
     list-style: none;
-    margin: 0;
 }
-ul li{
+._height ul li{
     float: left;
-    text-align: center;
-    margin-right: 5px;
-    line-height: 96px;
-    padding: 1rem;
+    padding:1.2rem;
 }
-a{
+._height a:link { 
+    color: #000000; 
     text-decoration: none; 
+} 
+._height a:visited { 
+    color: #000000; 
+    text-decoration: none; 
+} 
+._height a:hover { 
+    color: rgb(223, 223, 12); 
+    text-decoration: underline; 
+ }
+.car_height{
+    position: relative;
+    height: 601px;
+}
+.car_height ul{
+    margin: 0px;padding: 0px;
+}
+.car_img{
+    width: 100%;
+}
+._shang{
+    z-index: 1000px;
 }
