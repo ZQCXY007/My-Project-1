@@ -80,12 +80,12 @@ ul,li{
 }
 .focus-container{
     position: absolute;
-    z-index: 10px;
+    z-index: 10;
     margin: 0 auto;
-    left: 0;right: 0;
+    left: 573px;right:0 ;
 }
 .focus-container li{
-    width: 30px;height: 10px;
+    width: 50px;height: 10px;
     border-radius:5px;
     float: left;
     margin-right: 3px;
@@ -105,7 +105,7 @@ ul,li{
 .focus-container{ bottom: 10%; }
 
 /* 设置图片焦点的颜色 */
-.focus-item{ background: lawngreen }
+.focus-item{ background: red }
 
 /* 设置动画 */
 .slider-item,.focus-item{ animation-duration: 5s; }
@@ -125,3 +125,85 @@ ul,li{
 /* 图片的高度 */
 .slider , .slider-item{ padding-bottom: 29.2%; }
 /* .slider , .slider-item2{ padding-bottom: 29%; } */
+
+/* 文字 */
+.font-type{
+    color: #fff;
+}
+.slider-contaner .char{
+    width:600px;height:300px;
+    background-color: red;
+    z-index: 100;
+    position: absolute;
+    left: 300px;top: 46;
+}
+.slider-contaner h3{
+    font-size: 32px;
+    text-align: center;
+}
+
+/* 面包导航栏 */
+.nav-contaner{
+    margin-left: 100px;
+}
+.nav-contaner li{
+    position: relative;
+    float: left;
+    background: #8ECC2B;
+    width: 60px;height:30px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 30px;
+}
+.nav-contaner li a{
+    display: inline-block;
+    width: 100%;height:100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 添加伪元素 */
+.nav-contaner li::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 60px;top:0px;
+    width: 0px;height:0px;
+    border: transparent;
+    border-left:10px solid #8ECC2B;
+    border-top:15px solid transparent;  
+    border-bottom:15px solid transparent; 
+}
+.nav-contaner li::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -10px;top:0px;
+    width: 0px;height:0px;
+    border: transparent;
+    border-left:10px solid transparent;
+    border-top:15px solid #8ECC2B;  
+    border-bottom:15px solid #8ECC2B; 
+}
+.nav-contaner li:first-child::before,.nav-contaner li:last-child::after{
+    display: none;
+}
+.nav-contaner li:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.nav-contaner li:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 搜索框 */
+.search-contaner{ 
+    /* text-align: center; */
+    position: absolute;
+    top:160px;left: 150px;
+ }
+.search-contaner input{
+
+}
