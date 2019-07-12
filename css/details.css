@@ -1,0 +1,83 @@
+/* 图片景点 */
+.details-container{
+    width:100%;height:500px;
+    margin-top: 10rem;
+    /* position: relative; */
+}
+.details-container div{
+    width: 1200px;height:39px;
+    /* text-align: center; */
+    margin: 0 auto;
+    /* position: relative; */
+}
+.details-container ul li{
+    float: left;
+}
+.details-container ul li img{
+    margin-right:1.1rem;
+    transition: all 1.5s; 
+}
+.details-container ul li img:hover{
+    transform: scale(1.1)
+}
+/* 按钮 */
+.details-container .btn{
+    width: 1135px;height: 40px;
+    border:none;
+    margin-top: 1.1rem;
+    line-height: 40px;
+    border-radius: 2px;
+}
+.details-container .btn:hover{
+    cursor: pointer;
+    background: #ff0;
+}
+
+/* project规划 */
+.project-container{
+    width: 100%;height:409px;
+    position: relative;
+}
+.project-container .project-content{
+    width: 1300px;height: 380px;
+    margin: 0 auto;
+    background-image: url(../img/project/wKgBS1uGD9iAEQVQAAVmvVOIQwI791.jpg);
+}
+.project-container img{  width: 80px; }
+.project-container .project-img-1{
+    position: absolute;
+    top:60px;left: 775px;
+}
+.project-container .project-text-1{
+    position: absolute;
+    top:60px;left: 892px;
+}
+.project-container .project-img-2{
+    position: absolute;
+    bottom: 80px;left: 775px;
+}
+.project-container .project-text-2{
+    position: absolute;
+    bottom: 80px;left: 892px;
+}
+.project-container .project-img-3{
+    position: absolute;
+    top:60px;left: 200px;
+}
+.project-container .project-text-3{
+    position: absolute;
+    top:60px;left: 320px;
+}
+.project-container .project-img-4{
+    position: absolute;
+    bottom: 80px;left: 200px;
+}
+.project-container .project-text-4{
+    position: absolute;
+    bottom: 80px;left: 320px;
+}
+.project-container .pro-w{
+    width: 290px;height: 100px;
+}
+/*  */
+/*  */
