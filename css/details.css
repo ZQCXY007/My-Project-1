@@ -81,3 +81,46 @@
 }
 /*  */
 /*  */
+.price-container{
+    width: 100%;height:630px;
+    position: relative;
+    margin-top: 10rem;
+}
+.price-container ul li{ float: left;margin-right: 1.5rem}
+.price-container .price-item{ 
+    width: 1100px;height:616px;
+    margin: 0 auto;
+    position: relative;
+ }
+ .price-container .price-icon-txt{
+    width: 243px;height:60px;
+}
+ .price-container .price-icon-img{
+     width: 243px;height:190px;
+ }
+ .price-container .price-icon-img1{
+    background-image: url(../img/pirce/wKgBS1tQOMaAbC_dAAIG50lQONw01.png);
+}
+.price-container .price-icon-img2{
+    /* position: absolute;
+    top:100px;left:0px; */
+    background-image: url(../img/pirce/wKgBS1tQOMGAGYhlAAImyW20ziQ2.png);
+}
+.price-container .price-icon-img3{
+    background-image: url(../img/pirce/wKgBS1rVUdKAPnfOAADXDwGu3.jpg);
+}
+.price-container .price-icon-img4{
+    background-image: url(../img/pirce/wKgBS1tQPPqAV7ZSAAFmeGYA3SI4.png);
+}
+.price-container .price-icon-img5{
+    background-image: url(../img/pirce/wKgBS1rVUd-AVsjNAAEN9TtjShs5jpg.jpg);
+}
+.price-container .price-icon-img6{
+    background-image: url(../img/pirce/wKgBS1rVUdOALPIpAACi8LMXV9E6.jpg);
+}
+.price-container .price-icon-img7{
+    background-image: url(../img/pirce/wKgBS1tQPgCAWU07AAFYTPVVBw7.png);
+}
+.price-container .price-icon-img8{
+    background-image: url(../img/pirce/wKgBS1tQVMeAW-OuAAFo9sIawQo8.png);
+}
